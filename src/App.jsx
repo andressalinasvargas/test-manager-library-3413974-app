@@ -320,11 +320,11 @@ export default function App() {
       {/* Tabs Bar */}
       <nav style={{ background: '#fff', borderBottom: '1px solid #e2e8f0', padding: '0 2rem', display: 'flex', gap: '1.5rem' }}>
         {[
-          { id: 'books', label: 'Catálogo de Libros' },
-          { id: 'members', label: 'Socios' },
-          { id: 'loans', label: 'Préstamos Activos' },
-          { id: 'overdue', label: 'Libros Vencidos' },
-          ...(userRole === 'admin' ? [{ id: 'reports', label: 'Reporte Más Prestados' }] : [])
+          { id: 'books', label: 'Catálogo de Libros (catalogo)' },
+          { id: 'members', label: 'Socios (socios)' },
+          { id: 'loans', label: 'Préstamos y Devolución (prestamo / devolucion)' },
+          { id: 'overdue', label: 'Préstamos Vencidos (vencidos)' },
+          ...(userRole === 'admin' ? [{ id: 'reports', label: 'Reporte Más Prestados (reporte)' }] : [])
         ].map(tab => (
           <button
             key={tab.id}
